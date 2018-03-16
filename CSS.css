@@ -103,7 +103,7 @@ body{
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin: auto;
+  margin: auto auto 30px auto;
 
 }
 .copyright {
@@ -184,7 +184,7 @@ figure{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: auto auto auto 100px;
+  margin: auto auto 30px 100px;
 }
 .happy_clients > .happy_text{
   width: 200px;
@@ -221,6 +221,10 @@ figure{
   width: 700px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
+}
+.happy_text > section > h1{
+  font-size: 30px;
 }
 .home_page{
   margin: auto;
@@ -259,9 +263,10 @@ li > a{
   text-decoration: none;
   color: #39444a;
 }
-main{
+.main_content{
   margin: auto;
   width: 50%;
+  margin-bottom: 30px;
 }
 .menu{
   display: inline-flex;
@@ -279,10 +284,12 @@ main{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 .no_slider{
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 30px;
 }
 .no_slider > figure > img{
   float: left;
@@ -295,11 +302,13 @@ main{
   flex-wrap: nowrap;
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
-section > .img_list{
+ .img_list{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 section > figure{
   margin: 5px;
@@ -312,6 +321,9 @@ section > figure > div{
   justify-content: center;
   align-items: center;
   margin: 0;
+}
+.main_h1{
+  font-size: 40px;
 }
 section > h1{
   font-size: 80px;
@@ -411,7 +423,7 @@ ul{
   .first_img,.body_contact > .body_contact_div{
     display: none;
   }
-  .header_text,.menu,.header_menu_li,main{
+  .header_text,.menu,.header_menu_li,.main_content{
     width: auto;
   }
   .img_list > figure > div{
@@ -452,7 +464,7 @@ ul{
     margin: 15px auto 15px auto;
   }
   .menu_ul{
-    padding: 0;
+    padding: 10px;
   }
   .body_request {
     width: 100%;
