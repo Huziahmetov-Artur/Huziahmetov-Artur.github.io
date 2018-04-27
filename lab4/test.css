@@ -1,11 +1,9 @@
 body{
     display: flex;
     background: url("background_opcion2.jpg");
+    margin: 0;
+}
 
-}
-#root > div{
-    display: flex;
-}
 .part_two{
     display: flex;
     flex-direction: column;
@@ -16,11 +14,6 @@ body{
 textarea{
     height: 300px;
 }
-.Edit > *{
-    height: 30px;
-    padding-top: 10px;
-float: right;
-}
 .part_two{
     margin:30px 0;
 }
@@ -28,40 +21,33 @@ float: right;
     height: 30px;
     width: 100px;
 }
-main {
-    flex-direction: column;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 700px;
-}
+
 input[type="text"]{
-    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    min-height: 30px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: rgba(255,255,255,0.12);
+    display: table-cell;
+    width: 350px;
     height: 40px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 15px;
-    background-color: #f8f8f8;
-    outline: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
+    box-shadow: none;
+    border-radius: 10px;
 }
 input[type = "submit"]{
-    background-color: #4CAF50;
-    width: 200px;
-    height: 30px;
-    border-radius: 15px;
-    border: none;
-    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #fff;
     text-decoration: none;
-    margin: 4px 2px;
-    outline: none;
+    background-color: transparent;
+    height: 40px;
+    border-radius: 10px;
 }
-.inp{
-    display: flex;
-    justify-content: center;
-    margin:30px 0;
-    width: 100%;
-}
+
 #add_in  p {
     display: flex;
     justify-content: center;
@@ -91,4 +77,32 @@ justify-content: center;
 }
 .info_center{
     margin-left: 100px;
+}
+.github_head{
+    background: #24292e;
+    width: 100%;
+    height: 70px;
+   margin-bottom: 20px;
+}
+.inp{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.userInfo{
+    margin-top: 50px;
+    display: flex;
+}
+#root > div{
+    display: flex;
+    flex-direction: column;
+}
+svg{
+    background-color: #fff;
+    border-radius: 20px;
+}
+.bioInfo{
+    width: 500px;
 }
