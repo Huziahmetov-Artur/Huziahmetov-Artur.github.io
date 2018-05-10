@@ -1,7 +1,9 @@
 body{
     background: url("background_opcion2.jpg");
+}
+.main{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .chooseMatrix{
     display: flex;
@@ -101,4 +103,12 @@ h2{
 }
 .resSpan{
     width: 15px;
+}
+p {
+    width: 300px;
+    color: black;
+}
+p:hover {
+    width: 300px;
+    color: red;
 }
