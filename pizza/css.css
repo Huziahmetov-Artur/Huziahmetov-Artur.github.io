@@ -79,7 +79,7 @@ input[type="text"]{
 }
 .boardBack{
     padding-top: 150px;
-    background: url("mainBack.JPG") no-repeat;
+    background: url("mainBack.JPG") repeat-y;
 }
 .tabs{
     width: 600px;
