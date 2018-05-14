@@ -161,3 +161,110 @@ p{
     margin-bottom: 20px;
     margin-top: 0;
 }
+
+@media screen and (max-width: 960px){
+    .mainPart{
+        display: flex;
+        flex-direction: column;
+    }
+    .boardBack{
+         width: 100%;
+         padding-top: 20px;
+         background: url("mainBack.JPG");
+     }
+    .board {
+        background: url("board.svg") no-repeat;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+        height: 430px;
+    }
+    .base{
+        background: url("base.svg") no-repeat;
+        margin-left: 120px;
+        margin-top: 10px;
+        width: 500px;
+        height: 400px;
+    }
+    .infoPart{
+        background: #eeeeee;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipes{
+        width: 130px;
+    }
+    .recipes1{
+        display: flex;
+        justify-content: center;
+    }
+    .recipes2{
+        display: flex;
+        justify-content: center;
+    }
+    .ingredients{
+        width: 480px;
+        position: absolute;
+        top: 35px;
+        left: 220px;
+    }
+    figure{
+        width: 130px;
+        margin: 15px;
+    }
+}
+@media screen and (max-width: 600px){
+    .mainPart{
+        display: flex;
+        flex-direction: column;
+    }
+    .board {
+        background: url("board.svg") no-repeat;
+        width: 600px;
+        height: 430px;
+    }
+    .base{
+        background: url("base.svg") no-repeat;
+        margin-left: 120px;
+        margin-top: 10px;
+        width: 430px;
+        height: 350px;
+    }
+    .infoPart{
+        background: #eeeeee;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .boardBack{
+        width: 600px;
+        padding-top: 20px;
+        background: url("mainBack.JPG") ;
+    }
+    .recipes{
+        width: 100px;
+    }
+    .recipes1{
+        display: flex;
+        justify-content: center;
+    }
+    .recipes2{
+        display: flex;
+        justify-content: center;
+    }
+    .ingredients{
+      width: 430px;
+        height: auto;
+        position: absolute;
+        top: 30px;
+        left: 120px;
+    }
+    figure{
+        width: 100px;
+        margin: 15px;
+    }
+}
