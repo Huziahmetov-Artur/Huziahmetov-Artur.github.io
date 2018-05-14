@@ -43,6 +43,10 @@ figcaption{
     top: 160px;
     left: 120px;
 }
+#map{
+    height: 400px;
+    width: 400px;
+}
 .notDisplay{
     display: none;
 }
