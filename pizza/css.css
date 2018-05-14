@@ -94,8 +94,8 @@ body{
     margin: 0;
     padding: 0;
 }
-.active{
 
+.active{
     border-radius:6px;
     border:1px solid #dcdcdc;
     display:inline-block;
