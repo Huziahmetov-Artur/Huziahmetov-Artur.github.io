@@ -735,7 +735,7 @@ var GetService = /** @class */ (function () {
         this.http = http;
     }
     GetService.prototype.getApi = function () {
-        return this.http.get('http://localhost:4200/assets/info.json');
+        return this.http.get('https://huziahmetov-artur.github.io/SmartexLab/task/assets/info.json');
     };
     GetService.prototype.sortt = function (mas, typee) {
         console.log(typee);
