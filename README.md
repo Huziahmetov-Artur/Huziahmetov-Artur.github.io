@@ -1,1 +1,0 @@
-# Huziahmetov-Artur.github.io
