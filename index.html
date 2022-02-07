@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="google-signin-client_id"
-      content="718487203014-5ug9vgls4fcp4ntd9amg82dgpv6lpmkj.apps.googleusercontent.com"
+      content="549966974005-1no2pbea347p5nd7b6dvtg9o2ut0gi50.apps.googleusercontent.com"
     />
     <title>Usercentrics client</title>
     <script src="https://apis.google.com/js/platform.js"></script>
@@ -29,66 +29,68 @@
       <div id="name"></div>
       <div id="email"></div>
       <img width="50" id="image" />
-      <div class="g-signin2" data-onsuccess="googleSignIn"></div>
-      <a href="#" onclick="googleSignOut();">Sign out</a>
+      <!-- <div class="g-signin2" data-onsuccess="googleSignIn"></div>
+      <a href="#" onclick="googleSignOut();">Sign out</a> -->
     </div>
     <main>
-      <h1>Shared цууцчыlog in</h1>
+      <h1>Shared log in</h1>
     </main>
     <script>
-      let user = null;
-      function updateUI() {
-        document.getElementById("name").innerText = user?.name ?? "";
-        document.getElementById("email").innerText = user?.email ?? "";
-        document.getElementById("image").src = user?.image ?? "";
-      }
-      function googleSignOut() {
-        var auth2 = gapi.auth2.getAuthInstance();
-        auth2.signOut().then(function () {
-          console.log("User signed out.");
-          user = null;
-          updateUI();
-          window["UC_Login"]["signOut"]?.();
-        });
-      }
+      // let user = null;
+      // function updateUI() {
+      //   document.getElementById("name").innerText = user?.name ?? "";
+      //   document.getElementById("email").innerText = user?.email ?? "";
+      //   document.getElementById("image").src = user?.image ?? "";
+      // }
+      // function googleSignOut() {
+      //   var auth2 = gapi.auth2.getAuthInstance();
+      //   auth2.signOut().then(function () {
+      //     console.log("User signed out.");
+      //     user = null;
+      //     updateUI();
+      //     window["UC_Login"]["signOut"]?.();
+      //   });
+      // }
 
-      let auth2;
-      gapi.load("auth2", function () {
-        auth2 = gapi.auth2.init({
-          client_id:
-            "4357416598-q07c52qvdlt9tottmlo3c3mp723e0rf0.apps.googleusercontent.com",
-        });
-      });
+      // let auth2;
+      // gapi.load("auth2", function () {
+      //   auth2 = gapi.auth2.init({
+      //     client_id:
+      //       "549966974005-1no2pbea347p5nd7b6dvtg9o2ut0gi50.apps.googleusercontent.com",
+      //   });
+      // });
 
-      function googleSignIn(googleUser) {
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId());
-        console.log("Name: " + profile.getName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
-        user = {
-          name: profile.getName(),
-          email: profile.getEmail(),
-          image: profile.getImageUrl(),
-        };
-        updateUI();
-        window.UC_Login?.signIn?.({
-          provider: "google",
-          token: googleUser.getAuthResponse().id_token,
-        });
-      }
+      // function googleSignIn(googleUser) {
+      //   console.log('googleUser', googleUser.getAuthResponse().id_token,)
+      //   var profile = googleUser.getBasicProfile();
+      //   console.log("ID: " + profile.getId());
+      //   console.log("Name: " + profile.getName());
+      //   console.log("Image URL: " + profile.getImageUrl());
+      //   console.log("Email: " + profile.getEmail());
+      //   user = {
+      //     name: profile.getName(),
+      //     email: profile.getEmail(),
+      //     image: profile.getImageUrl(),
+      //   };
+      //   updateUI();
+      //   // window.UC_Login?.signIn?.({
+      //   //   provider: "google",
+      //   //   id: profile.getId()
+      //   // });
+      //   fetch('http://localhost:3000/api/auth/google?client_id=549966974005-1no2pbea347p5nd7b6dvtg9o2ut0gi50.apps.googleusercontent.com&token='+ googleUser.getAuthResponse().id_token)
+      // }
 
-      function onGoogleSignIn() {
-        auth2.signIn().then((googleUser) => {
-          googleSignIn(googleUser);
-        });
-      }
+      // function onGoogleSignIn() {
+      //   auth2.signIn().then((googleUser) => {
+      //     googleSignIn(googleUser);
+      //   });
+      // }
     </script>
     <script
-      id="usercentrics-cmp"
-      src="./bundle.js"
-      data-settings-id="f0n6WtiZX"
-      async
+    id="usercentrics-cmp"
+    src="./bundle.js"
+    data-settings-id="f0n6WtiZX"
+    async
     ></script>
   </body>
 </html>
