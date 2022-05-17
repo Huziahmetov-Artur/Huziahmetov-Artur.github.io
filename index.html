@@ -18,6 +18,9 @@
         <img width="50" id="image" />
         <div class="g-signin2" data-onsuccess="googleSignIn"></div>
         <a href="#" onclick="googleSignOut();">Sign out</a>
+        <div>
+            WidgetId: <input type="text" id="widgetId">
+        </div>
     </div>
     <main>
         <h1>PM</h1>
@@ -63,9 +66,10 @@
             const head = document.getElementsByTagName('head')[0];
             const js = document.createElement("script");
 
+            const widgetId = document.getElementById('widgetId').value || 'eCiUGaqi6b';
             js.type = "text/javascript";
             js.setAttribute('settingsId', "mid4lHMgE9");
-            js.setAttribute('widgetId', "eCiUGaqi6b");
+            js.setAttribute('widgetId', widgetId);
             js.id = 'usercentricsPMScript'
 
             js.src = "https://prf-mng.consent.usercentrics-staging.eu/form_generator.js";
