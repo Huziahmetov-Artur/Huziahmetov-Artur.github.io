@@ -38,7 +38,7 @@
                 console.log("User signed out.");
                 user = null;
                 document.getElementById('usercentricsPMScript').remove();
-                document.getElementById('root').remove();
+                document.getElementById('root').innerHTML = "";
                 updateUI();
             });
         }
@@ -63,10 +63,9 @@
                 image: profile.getImageUrl(),
             };
             updateUI();
-            const head = document.getElementsByTagName('head')[0];
-            const js = document.createElement("script");
 
-            const widgetId = document.getElementById('widgetId').value || 'eCiUGaqi6b';
+            const js = document.createElement("script");
+            const widgetId = document.getElementById('widgetId').value || 'Ew6Vnmd0x8';
             js.type = "text/javascript";
             js.setAttribute('settingsId', "mid4lHMgE9");
             js.setAttribute('widgetId', widgetId);
@@ -75,9 +74,9 @@
             js.src = "https://prf-mng.consent.usercentrics-staging.eu/form_generator.js";
 
 
-            head.appendChild(js);
+            document.body.appendChild(js);
             js.onload = () => {
-                console.log('window?.loadUsercentricsPreferenceManagment', Window?.loadUsercentricsPreferenceManagment)
+                console.log('loadUsercentricsPreferenceManagment', Window?.loadUsercentricsPreferenceManagment)
                 Window?.loadUsercentricsPreferenceManagment(profile.getId());
             };
 
