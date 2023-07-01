@@ -1,0 +1,77 @@
+/* HOWTOSTART */
+
+.how-to-start-container {
+}
+
+.how-to-start-container .steps {
+  display: flex;
+  margin-top: 50px;
+}
+
+.how-to-start-container .steps .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+}
+
+.how-to-start-container .steps .step .step-img {
+  width: 120px;
+  margin-top: 30px;
+}
+
+.how-to-start-container .steps .step div {
+  display: flex;
+  align-items: center;
+}
+
+.how-to-start-container .steps .step div img {
+  height: 34px;
+}
+
+.how-to-start-container .steps .step div p {
+  text-align: center;
+}
+
+.how-to-start-container .arrow {
+  width: 100px;
+}
+
+.how-to-start-container .enroll-button {
+  margin-left: 5%;
+  margin-top: 100px;
+}
+
+@media (max-width: 440px) {
+  .how-to-start-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .how-to-start-container .steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .how-to-start-container .steps .step {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .how-to-start-container .arrow {
+    display: none;
+  }
+
+  .how-to-start-container .steps .step div {
+    justify-content: center;
+  }
+
+  .how-to-start-container .steps .step div p {
+    width: 50%;
+  }
+  .how-to-start-container .enroll-button {
+    margin-top: 10px;
+    margin: 0 auto;
+  }
+}

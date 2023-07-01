@@ -1,6 +1,10 @@
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Erin Studies</title>
     <style>
       :root {
@@ -12,173 +16,8 @@
       p {
         margin: 0;
       }
-      /* HEADER */
 
-      .header-container {
-        padding: 20px 40px;
-        padding-bottom: 0;
-        background: rgb(255, 255, 255);
-        background: linear-gradient(
-          90deg,
-          rgba(255, 255, 255, 1) 45%,
-          rgba(64, 186, 140, 0.5074623599439776) 80%,
-          rgba(64, 186, 76, 0.5606836484593838) 100%
-        );
-      }
-
-      .header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      .navbar {
-        display: flex;
-        align-items: center;
-        width: 40%;
-        min-width: 500px;
-      }
-
-      .navbar > .navbar-item {
-        width: 20%;
-        font-size: 20px;
-      }
-
-      .navbar > .socials {
-        width: 30%;
-        margin-left: 10px;
-      }
-
-      .navbar > a {
-        text-decoration: none;
-        color: var(--black);
-        height: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .social img,
-      a {
-        width: 24px;
-        height: 24px;
-        margin-right: 15px;
-      }
-
-      .home-link {
-        background-image: url("./imgs/svg/path14.svg");
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-      }
-
-      /* BANNER */
-
-      .banner {
-        width: 100%;
-        height: 700px;
-        display: flex;
-        background-image: url("./imgs/png/Vector94.png");
-        background-repeat: no-repeat;
-        background-position: right;
-        background-size: 55%;
-      }
-
-      .banner-text {
-        margin-top: 120px;
-      }
-
-      .banner-text > .title {
-        font-size: 35px;
-        text-transform: uppercase;
-        height: 45px;
-        margin-bottom: 20px;
-        background-image: url("./imgs/svg/Vector94.svg");
-        background-repeat: no-repeat;
-        background-position: 24% 100%;
-      }
-
-      .banner-text > .text {
-        font-size: 20px;
-        width: 60%;
-      }
-
-      .banner-text > img {
-        height: 140px;
-        width: 630px;
-      }
-
-      .enroll-button {
-        margin-top: 130px;
-        margin-left: 15%;
-        font-size: 28px;
-        width: 184px;
-        height: 50px;
-        border: none;
-        background: url("./imgs/svg/Group27.svg") no-repeat top left;
-        padding: 2px 8px;
-        cursor: pointer;
-      }
-
-      /* AboutUs */
-
-      .about-us-container {
-        padding: 0 40px;
-        width: 1200px;
-        margin: 0 auto;
-        margin-top: 20px;
-        box-sizing: border-box;
-      }
-
-      .about-us-container > .container {
-        margin-top: 30px;
-        position: relative;
-      }
-
-      .about-us-container > .container .class-img {
-        position: relative;
-      }
-
-      .about-us-container > .container .class-img .barrette-top {
-        position: absolute;
-        top: -15px;
-        left: -45px;
-      }
-
-      .about-us-container > .container .class-img .barrette-bottom {
-        position: absolute;
-        bottom: -25px;
-        right: 440px;
-      }
-
-      .about-us-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 40px 20px;
-        width: 550px;
-        height: 450px;
-        top: 20%;
-        right: 70px;
-        position: absolute;
-        background-color: #ffffff;
-        box-sizing: border-box;
-      }
-
-      .about-us-text > img {
-        top: -9px;
-        position: absolute;
-        width: 106%;
-        right: -33px;
-      }
-
-      .about-us-text span {
-        color: var(--green);
-      }
-
-      /* SERVICES */
-
-      .services-container {
+      .container {
         padding: 0 40px;
         width: 1200px;
         margin: 0 auto;
@@ -186,38 +25,17 @@
         box-sizing: border-box;
       }
 
-      .services-container .services-list {
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 30px;
-      }
+      @media (max-width: 1080px) {
+        .container {
+          width: 100%;
+          padding: 0 20px;
+        }
 
-      .services-list .services-item {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        position: relative;
-        margin-bottom: 15px;
+        .title-image {
+          width: 30%;
+          margin: 0 auto;
+        }
       }
-
-      .services-list .services-item .dot {
-        width: 13px;
-        height: 19px;
-        margin-right: 20px;
-      }
-
-      .services-list .services-item .service-name {
-        font-size: 40px;
-        line-height: 50px;
-      }
-
-      .services-list .services-item .plus-icon {
-        position: absolute;
-        right: 0;
-        cursor: pointer;
-      }
-
-      /* HOWTOSTART */
 
       /* FOOTER */
 
@@ -240,18 +58,143 @@
         width: 25%;
         font-size: 20px;
       }
+
+      @media (max-width: 440px) {
+        footer {
+          padding: 20px;
+        }
+
+        .footer-logo {
+          width: 55px;
+        }
+
+        footer .socials {
+          padding: 0;
+        }
+
+        .footer-navbar {
+          font-size: 12px;
+        }
+      }
     </style>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/about-us.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/how-to-start.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+
+    <script>
+      const setModal = () => {
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        var btn2 = document.getElementById("myBtn2");
+        console.log("btn", btn);
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+          modal.style.display = "block";
+        };
+
+        // When the user clicks the button, open the modal
+        btn2.onclick = function () {
+          modal.style.display = "block";
+        };
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+          modal.style.display = "none";
+        };
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        };
+
+        let contactForm = document.getElementById("contactForm");
+
+        contactForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          let fname = document.getElementById("fname");
+          let lname = document.getElementById("lname");
+          let country = document.getElementById("country");
+          let subject = document.getElementById("subject");
+
+          console.log("fname", fname.value);
+          console.log("lname", lname.value);
+          console.log("country", country.value);
+          console.log("subject", subject.value);
+        });
+      };
+      window.onload = setModal;
+    </script>
   </head>
 
   <body>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Contact Form</h3>
+
+        <div class="form">
+          <form id="contactForm">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+
     <div class="header-container">
       <div class="header">
         <img src="./imgs/svg/logog.svg" alt="" />
-
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
         <div class="navbar">
           <a href="#news" class="navbar-item home-link">Home</a>
-          <a href="#news" class="navbar-item">O nas</a>
-          <a href="#news" class="navbar-item">Yslugi</a>
+          <a href="#news" class="navbar-item">О нас</a>
+          <a href="#news" class="navbar-item">Услуги</a>
           <a href="#news" class="navbar-item">School life</a>
           <div class="navbar-item socials">
             <a href="#news" class="social"
@@ -277,20 +220,20 @@
             путешествовать без страха.
           </p>
 
-          <button class="enroll-button">записаться</button>
+          <button id="myBtn" class="enroll-button">записаться</button>
         </div>
       </div>
     </div>
 
-    <div class="about-us-container">
-      <img src="./imgs/svg/AboutUs.svg" alt="" />
+    <div class="about-us-container container">
+      <img class="title-image" src="./imgs/svg/AboutUs.svg" alt="" />
 
-      <div class="container">
+      <div class="about-us">
         <div class="class-img">
           <img class="barrette-top" src="./imgs/svg/Vector9.svg" alt="" />
           <img class="barrette-bottom" src="./imgs/svg/Vector8.svg" alt="" />
 
-          <img src="./imgs/png/Rectangle5.png" alt="" />
+          <img class="img" src="./imgs/png/Rectangle5.png" alt="" />
         </div>
         <div class="about-us-text">
           <img src="./imgs/svg/Group2.svg" alt="" />
@@ -311,8 +254,8 @@
       </div>
     </div>
 
-    <div class="services-container">
-      <img src="./imgs/svg/services.svg" alt="" />
+    <div class="services-container container">
+      <img class="title-image" src="./imgs/svg/services.svg" alt="" />
 
       <div class="services-list">
         <div class="services-item">
@@ -333,8 +276,8 @@
       </div>
     </div>
 
-    <div class="services-container">
-      <img src="./imgs/svg/formats.svg" alt="" />
+    <div class="services-container container">
+      <img class="title-image" src="./imgs/svg/formats.svg" alt="" />
 
       <div class="services-list">
         <div class="services-item">
@@ -355,17 +298,76 @@
       </div>
     </div>
 
-    <div class="how-to-start-container"></div>
+    <div class="how-to-start-container container">
+      <img class="title-image" src="./imgs/svg/how-to-start.svg" alt="" />
+      <div class="steps">
+        <div class="step">
+          <div>
+            <img src="./imgs/svg/Vector63.svg" alt="" />
+            <p>напиши нам в директ или оставь заявку на сайте</p>
+          </div>
+          <img class="step-img" src="./imgs/png/message.png" alt="" />
+        </div>
+        <img class="arrow" src="./imgs/svg/Vector65.svg" alt="" />
+
+        <div class="step">
+          <div>
+            <img src="./imgs/svg/Vector67.svg" alt="" />
+            <p>мы организуем интервью, на котором определим твой уровень</p>
+          </div>
+          <img class="step-img" src="./imgs/png/mac.png" alt="" />
+        </div>
+        <img class="arrow" src="./imgs/svg/Vector68.svg" alt="" />
+
+        <div class="step">
+          <div>
+            <img src="./imgs/svg/Vector70.svg" alt="" />
+            <p>посети пробное занятие и сделай правильный выбор 😉</p>
+          </div>
+          <img class="step-img" src="./imgs/png/books.png" alt="" />
+        </div>
+      </div>
+
+      <button id="myBtn2" class="enroll-button">записаться</button>
+    </div>
+
+    <div class="gallery-container container">
+      <img class="title-image" src="./imgs/svg/SCHOOLLife.svg" alt="" />
+
+      <div class="gallery">
+        <ul>
+          <li>
+            <img src="./imgs/png/Rectangle 7.png" alt="" />
+          </li>
+          <li>
+            <img src="./imgs/png/Rectangle 8.png" alt="" />
+          </li>
+          <li>
+            <img src="./imgs/png/Rectangle 9.png" alt="" />
+          </li>
+          <li>
+            <img src="./imgs/png/Rectangle 10.png" alt="" />
+          </li>
+          <li>
+            <img src="./imgs/png/Rectangle 11.png" alt="" />
+          </li>
+          <li>
+            <img src="./imgs/png/Rectangle 12.png" alt="" />
+          </li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
 
     <footer>
-      <img src="./imgs/svg/logog.svg" alt="" />
+      <img class="footer-logo" src="./imgs/svg/logog.svg" alt="" />
       <div class="footer-navbar">
-        <div class="navbar">
+        <!-- <div class="navbar">
           <a href="#news" class="navbar-item">Home</a>
           <a href="#news" class="navbar-item">O nas</a>
           <a href="#news" class="navbar-item">Yslugi</a>
           <a href="#news" class="navbar-item">School life</a>
-        </div>
+        </div> -->
         <div>
           <p>ИП Лишко Д. С. УНП 291660880</p>
         </div>
