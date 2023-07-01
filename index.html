@@ -135,6 +135,10 @@
         });
       };
       window.onload = setModal;
+
+      function closeNav() {
+        document.getElementById("menu__toggle").checked = false;
+      }
     </script>
   </head>
 
@@ -192,10 +196,16 @@
           <span></span>
         </label>
         <div class="navbar">
-          <a href="#news" class="navbar-item home-link">Home</a>
-          <a href="#aboutUs" class="navbar-item">О нас</a>
-          <a href="#services" class="navbar-item">Услуги</a>
-          <a href="#schoolLife" class="navbar-item">School life</a>
+          <a href="#news" onclick="closeNav()" class="navbar-item home-link"
+            >Home</a
+          >
+          <a href="#aboutUs" onclick="closeNav()" class="navbar-item">О нас</a>
+          <a href="#services" onclick="closeNav()" class="navbar-item"
+            >Услуги</a
+          >
+          <a href="#schoolLife" onclick="closeNav()" class="navbar-item"
+            >School life</a
+          >
           <div class="navbar-item socials">
             <a
               href="https://www.instagram.com/erin_english_studies/"
