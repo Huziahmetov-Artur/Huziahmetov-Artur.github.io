@@ -129,6 +129,7 @@
     #menu__toggle:checked~.navbar {
         visibility: visible;
         left: 0;
+        z-index: 1;
     }
 
     .menu__btn {
